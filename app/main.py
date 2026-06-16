@@ -3,7 +3,7 @@ import sys
 
 def main():
     sys.stdout.write("$ ")
-    command = sys.argv[1]
+    command = sys.argv[0]
     if command:
         print(f"{command}: command not found")
 

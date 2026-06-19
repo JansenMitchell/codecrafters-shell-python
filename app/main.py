@@ -7,6 +7,9 @@ def main():
         command = input()
         if command == "exit":
             sys.exit()
+        elif command.startswith("echo"):
+            string = command[5:]
+            print(f"{string}")
         else:
             print(f"{command}: command not found")
 
